@@ -1,0 +1,3 @@
+<view>
+  <w-header header-text='购物车'></w-header>
+</view>
