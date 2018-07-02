@@ -1,0 +1,3 @@
+<view class='headerWrapper'>
+	<view class='header-text'>{{headerText}}</view>
+</view>
