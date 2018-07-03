@@ -2,9 +2,11 @@
   "pages":[
 		"pages/home/home",
 		"pages/user/user",
+    "pages/ordersDetails/orders",
     "pages/store/store",
 		"pages/shoppingCart/shoppingCart",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/search/search"
   ],
   "window":{
     "backgroundTextStyle":"light",

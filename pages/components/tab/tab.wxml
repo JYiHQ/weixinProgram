@@ -1,0 +1,10 @@
+<view class='tabWrapper'>
+    <!-- <view class='item {{currentTab === 1? "tab-active" : ""}}' bindtap='changeTab' id= '1'>全部订单</view>
+    <view class='item {{currentTab === 2? "tab-active" : ""}}' bindtap='changeTab' id= '2'>待支付</view>
+    <view class='item {{currentTab === 3? "tab-active" : ""}}' bindtap='changeTab' id= '3'>待发货</view>
+    <view class='item {{currentTab === 4? "tab-active" : ""}}' bindtap='changeTab' id= '4'>待收货</view>
+    <view class='item {{currentTab === 5? "tab-active" : ""}}' bindtap='changeTab' id= '5'>交易完成</view> -->
+    <!-- <view wx:for="{{tabItem}}" class='item {{currentTab === {{index}} ? "tab-active" : "" }}' id="{{index}}" bindtap='changeTab'>
+      {{item.name}}
+    </view> -->
+</view>

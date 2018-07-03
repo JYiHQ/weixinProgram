@@ -1,3 +1,13 @@
 <view>
 	<w-header header-text="微商城"></w-header>
+  <view class='content'>
+    <view class='tabWrapper'>
+      <view class='item {{currentTab === 1? "tab-active" : ""}}' bindtap='changeTab' id= '1'>首页</view>
+      <view class='item {{currentTab === 2? "tab-active" : ""}}' bindtap='changeTab' id= '2'>值得买</view>
+      <view class='item {{currentTab === 3? "tab-active" : ""}}' bindtap='changeTab' id= '3'>品牌馆</view>
+    </view>
+    <view class='search-wrapper'>
+      <view class='search' bindtap='jumpSearchPage'>... 搜索商品 ...</view>
+    </view>
+  </view>
 </view>

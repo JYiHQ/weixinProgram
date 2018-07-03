@@ -4,7 +4,7 @@ Page({
 	 * 页面的初始数据
 	 */
 	data: {
-		titles: ['推荐', '朋友', '电台'],
+    currentTab: 1,
 	},
 
 	/**
@@ -61,5 +61,17 @@ Page({
 	 */
 	onShareAppMessage: function () {
 		
-	}
+	},
+
+  changeTab: function (e) {
+    var id = Number(e.currentTarget.id);
+    this.setData({
+      currentTab: id,
+    });
+  },
+  jumpSearchPage: function () {
+    wx.navigateTo({
+      url: '../search/search',
+    })
+  }
 })

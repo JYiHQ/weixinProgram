@@ -1,0 +1,22 @@
+<view class='wrapper'>
+  <view class='header-wrapper'>
+    <image bindtap='backPage' class='image position' src='../assets/icons/jiantouzuo.png'></image>
+    <view class='position'>搜索</view>
+  </view>
+  <view class='content'>
+    <view class='search-wrapper'>
+      <input class='input' type='text' placeholder='输入商品关键字' placeholder-class='placeholder'></input>
+      <image class='img' src='{{imgSrc}}'></image>
+    </view>
+    <view class='hot-search'>
+      <view class='hot-text'>热门搜索</view>
+      <view class='hot-label'></view>
+    </view>
+    <view class='footer'>
+        <view class='footer-btn'>
+          <image class='footer-image' src="../assets/icons/clock-black.png"></image>
+          <view>我的足迹</view>
+        </view>
+      </view>
+  </view>
+</view>

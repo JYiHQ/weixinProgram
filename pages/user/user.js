@@ -29,34 +29,34 @@ Page({
     tabArr: [
       {
         url: '../assets/icons/shopping.png',
-        btnUrl: '../assets/icons/jiantouzuo.png',
+        btnUrl: '../assets/icons/jiantouyou.png',
         name: '我的团购',
       },
       {
         url: '../assets/icons/coupon.png',
-        btnUrl: '../assets/icons/jiantouzuo.png',
+        btnUrl: '../assets/icons/jiantouyou.png',
         name: '我的优惠券',
       },
       {
         url: '../assets/icons/clock.png',
-        btnUrl: '../assets/icons/jiantouzuo.png',
+        btnUrl: '../assets/icons/jiantouyou.png',
         name: '我的足迹',
       }
     ],
     tabArr1: [
       {
         url: '../assets/icons/addFriend.png',
-        btnUrl: '../assets/icons/jiantouzuo.png',
+        btnUrl: '../assets/icons/jiantouyou.png',
         name: '邀请好友领券',
       },
       {
         url: '../assets/icons/location.png',
-        btnUrl: '../assets/icons/jiantouzuo.png',
+        btnUrl: '../assets/icons/jiantouyou.png',
         name: '地址管理',
       },
       {
         url: '../assets/icons/service.png',
-        btnUrl: '../assets/icons/jiantouzuo.png',
+        btnUrl: '../assets/icons/jiantouyou.png',
         name: '联系客服',
       }
     ]
@@ -102,5 +102,10 @@ Page({
 			userInfo: e.detail.userInfo,
 			hasUserInfo: true
 		})
-	}
+	},
+  jumpOrdersPage: function () {
+    wx.navigateTo({
+      url: '../ordersDetails/orders',
+    })
+  }
 })

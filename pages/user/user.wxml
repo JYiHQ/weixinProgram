@@ -9,7 +9,7 @@
     </view>
     <view class='user-goods'>我的订单</view>
     <view class='btn-wrapper'>
-      <view class='item' wx:for="{{labelArr}}">
+      <view class='item' wx:for="{{labelArr}}" bindtap='jumpOrdersPage'>
         <image class='img' src="{{item.url}}"></image>
         <view class='img-text'>{{item.name}}</view>
       </view>

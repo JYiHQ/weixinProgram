@@ -1,1 +1,52 @@
+page {
+  background-color: #F5F5F5;
+}
+.content {
+  position: relative;
+  top: 80px;
+}
 
+.tabWrapper {
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  margin-top: -35rpx;
+  display: flex;
+  font-size: 12px;
+  color: grey;
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-active {
+  color: #d43c33;
+  border-bottom: 1px solid #d43c33;
+}
+
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  height: 25px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 0 2px 3px gray;
+  text-align: center;
+  font-size: 12px;
+}
