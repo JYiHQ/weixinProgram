@@ -2,11 +2,14 @@
 	width: 100%;
 	height: 65px;
 	padding-bottom: 5px;
-	background: #d4237a;
+	background: pink;
 	display: flex;
 	align-items: center;
 	flex-direction: row;
 	justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 999;
 }
 
 

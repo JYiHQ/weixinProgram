@@ -1,10 +1,41 @@
 <w-header header-text="个人中心"></w-header>
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view>
+    <view class='user-goods'>我的订单</view>
+    <view class='btn-wrapper'>
+      <view class='item' wx:for="{{labelArr}}">
+        <image class='img' src="{{item.url}}"></image>
+        <view class='img-text'>{{item.name}}</view>
+      </view>
+    </view>
+    <view class='label-wrapper'>
+      <view class='row' wx:for="{{tabArr}}">
+        <view class='label-img'>
+          <image class='label-image' src= "{{item.url}}"></image>
+        </view>
+        <view class='label-text'>{{item.name}}</view>
+        <view class='label-btn'>
+          <view></view>
+          <image class='img-btn' src="{{item.btnUrl}}"></image>
+        </view>
+      </view>
+    </view>
+    <view class='label-wrapper'>
+      <view class='row' wx:for="{{tabArr}}">
+        <view class='label-img'>
+          <image class='label-image' src= "{{item.url}}"></image>
+        </view>
+        <view class='label-text'>{{item.name}}</view>
+        <view class='label-btn'>
+          <view></view>
+          <image class='img-btn' src="{{item.btnUrl}}"></image>
+        </view>
+      </view>
+    </view>
   </view>
-</view>
