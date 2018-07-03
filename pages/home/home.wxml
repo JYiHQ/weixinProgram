@@ -9,5 +9,34 @@
     <view class='search-wrapper'>
       <view class='search' bindtap='jumpSearchPage'>... 搜索商品 ...</view>
     </view>
+    <swiper class='swiper' indicator-dots indicator-active-color="#fff" autoplay interval="2000" circular>
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class='btn-wrapper'>
+      <view class='btn-item'>
+        <view class='iconfont el-icon-jin-leimucuquanbu icon-width'></view>
+        <view>全部</view>
+      </view>
+      <view class='btn-item'>
+        <view class='iconfont el-icon-jin-tubiaozhizuomoban- icon-width'></view>
+        <view>护肤</view>
+      </view>
+      <view class='btn-item'>
+        <view class='iconfont el-icon-jin-huazhuangpin icon-width'></view>
+        <view>彩妆</view>
+      </view>
+      <view class='btn-item'>
+        <view class='iconfont el-icon-jin-coffee icon-width'></view>
+        <view>上新</view>
+      </view>
+      <view class='btn-item'>
+        <view class='iconfont el-icon-jin-tuijian icon-width'></view>
+        <view>推荐</view>
+      </view>
+    </view>
   </view>
 </view>
