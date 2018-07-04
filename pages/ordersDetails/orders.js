@@ -4,7 +4,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    currentTab: '',
+    currentTab: null,
     tabItem: ['全部订单', '待支付', '待发货', '待收货', '交易完成'],
   },
 
@@ -26,7 +26,11 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+    var arr = getCurrentPages();
+    var id = Number(arr[arr.length - 2].data.currentLabel);
+    this.setData({
+      currentTab: id + 1,
+    })
   },
 
   /**
@@ -71,7 +75,5 @@ Page({
   changeTab: function (e) {
     var id = Number(e.currentTarget.id);
     this.setData({ currentTab: id });
-    console.log(typeof id );
-    console.log(this.data.currentTab);
   }
 })

@@ -8,6 +8,7 @@ Page({
 		userInfo: {},
 		hasUserInfo: false,
 		canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    currentLabel: null,
     labelArr: [
       {
         url: '../assets/icons/paid.png',
@@ -103,7 +104,10 @@ Page({
 			hasUserInfo: true
 		})
 	},
-  jumpOrdersPage: function () {
+  jumpOrdersPage: function (e) {
+    this.setData({
+      currentLabel: e.currentTarget.id
+    })
     wx.navigateTo({
       url: '../ordersDetails/orders',
     })

@@ -1,5 +1,6 @@
 {
 	"usingComponents": {
-		"w-header": "../components/header/header"
+		"w-header": "../components/header/header",
+    "w-home": "../components/homePage/home"
 	}
 }
