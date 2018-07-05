@@ -1,3 +1,43 @@
-<view>
+<view class='wrapper'>
 	<w-header header-text="分类"></w-header>
+  <view class='header'>
+    <view class='search-wrapper'>
+      <view class='search-icon iconfont el-icon-jin-sousuo'></view>
+      <input class='input' placeholder='请输入商品关键字'></input>
+      <view class='btn-wrapper'>
+        <view class='iconfont el-icon-jin-shizhongclock74 icon'></view>
+        <view class='icon-text'>足迹</view>
+      </view>
+    </view>
+  </view>
+  <view class='content'>
+    <view class='content-item1'>
+      <view  wx:for='{{labelArr}}' wx:key="{{item.type}}" id="{{item.id}}"
+        class='store-label {{currentTab === item.id ? "label-active": ""}}' bindtap='changeCurrentTab'>
+        <view class='point {{currentTab === item.id ? "": "hidden"}}'></view>
+        <view>{{item.name}}</view>
+      </view>
+    </view>
+    <view class='content-item2'>
+      <scroll-view scroll-y class='scroll'>
+        <view class='tab-wrapper' wx:if="{{currentTab === 0}}">
+          <view class='tab-item'>
+            <view class='iconfont el-icon-jin-wodedaifahuo3dtouchshangpinxiangqing tab-icon'></view>
+            <view>保税发货</view>
+          </view>
+          <view class='tab-item'>
+            <view class='iconfont el-icon-jin-gouwu tab-icon'></view>
+            <view>全部商品</view>
+          </view>
+        </view>
+        <view class='list-header'>热卖商品</view>
+        <view class='list-wrapper'>
+          <view class='list-item'>
+            <view class='list-image'></view>
+            <view class='list-content'></view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
 </view>

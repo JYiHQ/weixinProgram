@@ -1,1 +1,167 @@
+@import '../assets/iconfont.wxss';
 
+page {
+  color: gray;
+  background-color: #F5F5F5;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.header {
+  position: relative;
+  top: 150rpx;
+  height: 100rpx;
+  background-color: white;
+}
+
+.search-wrapper {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+  font-size: 14px;
+  margin-top:20rpx;
+}
+
+.search-icon {
+  font-size: 16px;
+  color: black;
+  position: absolute;
+  top: 30rpx;
+  left: 40rpx;
+}
+
+.input {
+  width: 75%;
+  height: 75rpx;
+  border-radius: 15px;
+  background-color: #F5F5F5;
+  padding-left: 80rpx;
+  margin-left: 20rpx;
+}
+
+.btn-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-text {
+  font-size: 10px;
+  margin-left: 20rpx;
+}
+
+.icon {
+  margin-left: 20rpx;
+}
+.content {
+  width: 100%;
+  display: flex;
+  position: relative;
+  top: 170rpx;
+}
+  
+.content-item1 {
+  flex: 0 0 25%;
+  display: flex;
+  flex-direction: column;
+}
+.store-label {
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.label-active {
+  color: #d43c33;
+  background-color: white;
+}
+
+.content-item2 {
+  flex: 0 0 75%;
+}
+
+.scroll {
+  width: 100%;
+  height: 600rpx;
+}
+
+.scroll-item {
+  width: 100%;
+} 
+
+.point {
+  width: 8rpx;
+  height: 8rpx;
+  border-radius: 50%;
+  background-color:#d43c33;
+  margin-right: 20rpx; 
+}
+.hidden {
+  opacity: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+} 
+
+.tab-wrapper {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white
+}
+
+.tab-item {
+  flex: 0 0 45%;
+  height: 75%;
+  background-color: #F5F5F5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+.tab-icon{
+  margin-right: 20rpx;
+}
+.list-header {
+  width: 97%;
+  height: 80rpx;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+  padding-left: 20rpx;
+}
+
+.list-item {
+  width: 100%;
+  height: 170rpx;
+  margin-bottom: 2rpx;
+  background-color: white;
+  display: flex;
+  align-items: flex-end;
+}
+.list-image {
+  flex: 0 0 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-content {
+  flex: 0 0 70%;
+  height: 85%;
+}

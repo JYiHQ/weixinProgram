@@ -1,0 +1,6 @@
+<view class='wrapper'>
+  <view class='video-wrapper'>
+    <video id='video' class='video' src="{{videoUrl}}" controls objectFit='contain'> 
+    </video>
+  </view>
+</view>

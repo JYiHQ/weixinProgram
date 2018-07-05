@@ -32,6 +32,6 @@ page {
 
 .swiper {
   margin-top: 20rpx;
-  height: 800rpx
+  height: 700rpx
 }
 

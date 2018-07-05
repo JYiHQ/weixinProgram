@@ -1,6 +1,7 @@
 {
 	"usingComponents": {
 		"w-header": "../components/header/header",
-    "w-home": "../components/homePage/home"
+    "w-home": "../components/homePage/home",
+    "w-buy": "../worthToBuy/index"
 	}
 }

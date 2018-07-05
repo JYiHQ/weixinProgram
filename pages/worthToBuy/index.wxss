@@ -1,0 +1,7 @@
+.video {
+  width: 1;
+  height: 1;
+  margin-top: 40rpx;
+  margin-left: 40rpx;
+  margin-right:40rpx;
+}
